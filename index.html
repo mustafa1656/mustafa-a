@@ -1,28 +1,86 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-     <title> Real coffe </title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Produkter</title>
+   <link rel="stylesheet" href="css/style.css">
+   <!-- <div id="container">
+    <ul id="menu">
+        <li>
+            <a href="">Hem</a>
+            <ul>
+                <li><a href=>Om Oss</a></li>
+                <li><a href="">Dokumentation</a></li>
+                <li><a href=""> Kontakt</a></li>
+                <li><a href=""> Produkter</a></li>
+            </ul>
+        </li>
+    </ul>
+   </div> -->
+   <!-- testade göra en dropdown men tyvärr gick det inte some planerat men det försöket som räknas -->
 </head>
+ 
 <body>
-
-    <nav class="navbar"> </nav>
+   <!--HEADER-->
+   <header>
+       <nav class="nav">
+               <ul class="navlist">
+                   <li><a href="index.html">Hem</a></li>
+                   <li><a href="products.html">Produkter</a></li>
+                   <li><a href="about.html">Om Oss</a></li>
+                   <li><a href="documentation.html">Dokumentation</a></li>
+                   <li><a href="contact.html">Kontakt</a></li>
+               </ul>
+       </nav>
+   </header>
+   <!--HEADER-->
   
-        <div >
-            <a href="index.html"><img src="images/coffe-logo.png" class="logo" ></a> <!--Denna koden va jag fast i 1 hel dag för att jag kunde it lägga en bild i själva vsc men sen så hette filen en annan image och i koden va det images så tillslut tackvare herman löste vi problemet och nu ska jag kolla 3 gånger efter varje kod jag skriver-->  
-        </div>
-detta är inte en item men utan för container
-    <div class="container">
-        <div class="item"><img src="images/arabica.webp2" class="Arabica"></div>Arabica</div>
-        <div class="item">Black</div>
-        <div class="item">Americano</div>
-        <div class="item">Cappaciono</div>
-        <div class="item">Islatte</div>
-        <div class="item">Mocha</div>
-        detta är inte en item men i containern
-      </div>
-    
+   <!--BODY-->
+<img src="image/coffeemainindex.webp" class="index-front-image">
+ 
+   <!--BODY-->
+   <h1 class="black-text">BÄST SÄLJANDE PRODUKT</h1>
+   <div class="bigproduct">
+       <div class="bigproduct-picture"><img src="image/coffeeproductmain.jpeg"></div>
+       <!--product-->
+       <div class="bigproduct-text">
+           <!--product title-->
+           <h1 class="bigproduct-title">INTENSO</h1>
+           <div class="bigproduct-price">
+               <!--original price-->
+               <p class="bigproduct-line">599 kr</p>
+               <br>
+               <!--discount price-->
+               <p>299 kr</p>
+               <button class="bigproduct-button">REA</button>
+           </div>
+           <p class="tax-included">skatt ingår.</p>
+           <!--product desc.-->
+           <p class="bigproduct-des">Ett oväntat fylligt och kompakt kaffe som sticker ut tack vare sin långvariga eftersmak. Robusta från Guatemala tillsammans med syd- och centralamerikanska Arabicabönor ger detta kaffe en särpräglad karaktär med starkt rostade aromer och toner av brunt socker. Med mjölk bibehåller kaffet sin kraftfulla karaktär medan de karamelliserade tonerna förhöjs.
+           </p>
+           <!--add to cart-->
+           <button class="add-to-cart">Lägg i varukorg</button>
+           <!--buy now-->
+           <button class="buy-now">Köp nu</button>
+       </div>
+   </div>
+ 
+   <footer>
+       <div class="left-footer">
+           <p>Snabb länkar:</p>
+           <a href="index.html">Hem</a>
+           <a href="products.html">Produkter</a>
+           <a href="about.html">Om Oss</a>
+           <a href="documentation.html">Dokumentation</a>
+           <a href="contact.html">Kontakt</a>
+       </div>
+ 
+       <div class="right-footer">
+           <p>Prenumerera för rabattkoder</p>
+           <input type="text">
+       </div>
+   </footer>
 </body>
 </html>

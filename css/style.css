@@ -1,37 +1,485 @@
-/* * { 
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}*/
-body {
-  background-image: url("https://cdn.msisurfaces.com/images/colornames/coffee-brown-granite.jpg");
+body{
+background-color: white;   
+   margin: 0px;
+   padding: 0px;
 }
+ 
+.black-text {
+   color: black;
+   text-align: center;
+   font-size: 50px;
+   text-decoration: underline;
+}
+ 
+header {
+   border-right: 0px;
+   border-left: 0px;
+   border-top: 0px;
+   border-bottom: 1px;
+   border-style: solid;
+   border-color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: inherit;
+   flex-wrap: wrap;
+   flex-grow: 1;
+   flex-shrink: 1;
+   border-color: black;
+}
+ 
+.nav {
+   background-color: white;
+   height: 56px;
+   width: 100%;
+   text-align: center;
+}
+ 
+.nav ul {
+   padding: 0;
+   margin: 0;
+}
+ .nav li {
+   font-size: 20px;
+   list-style: none;
+   padding: 0;
+   display: inline-block;
+}
+ 
+.nav li a:hover {
+   margin-bottom: 5px;
+}
+ .nav li a {
+   text-decoration: none;
+   padding: 15px;
+   color: black;
+   font-size: 22px;
+   line-height: 55px;
+}
+ 
+.index-front-image {
+   width: 100%;
+}
+ 
+.bigproduct {
+   display: flex;
+   background-color: white;
+   width: 100%;
+   height: 700px;
+   justify-content: space-evenly;
+   align-items: center;
+}
+ 
+img {
+   max-width: 100%;
+   max-height: 100%;
+}
+ 
+ 
+.bigproduct-picture {
+   background-color: inherit;
+   width: 45%;
+   height: 90%;
+}
+ 
+.bigproduct-title {
+   font-size: 50px;
+}
+ 
+.bigproduct-text {
+   display: flex;
+   background-color: white;
+   color: black;
+   width: 45%;
+   height: 90%;
+   margin-left: 10px;
+   flex-direction: column;
+}
+ 
+.bigproduct-text p {
+   font-size: 20px;
+}
+ 
+.bigproduct-line {
+   text-decoration: line-through;
+}
+ 
+.bigproduct-price {
+   display: flex;
+   align-items: center;
+   width: 400px;
+   height: 30px;
+}
+ 
+.bigproduct-price p {
+   margin: 10px;
+}
+ 
+.bigproduct-text .tax-included {
+   font-size: 15px;
+}
+ 
+.bigproduct-text .bigproduct-des {
+   font-size: 20px;
+}
+ 
+.bigproduct-button {
+   background-color: red;
+   border-style: none;
+   border-radius: 20px;
+   color: white;
+}
+ 
+.add-to-cart {
+   display: flex;
+   margin-top: 40px;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   background-color: white;
+   font-size: 24px;
+   transition-duration: 200ms;
+   border-color: black;
+}
+ 
+.add-to-cart:hover {
+   margin-left: 10px;
+   margin-right: -10px;
+}
+ 
+.buy-now {
+   display: flex;
+   margin-top: 5px;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   background-color: black;
+   color: white;
+   font-size: 24px;
+   transition-duration: 200ms;
+   border-color: black;
+}
+ 
+.buy-now:hover {
+   margin-left: 10px;
+   margin-right: -10px;
+}
+/* END OF INDEX / BEGGINING OF PRODUCTS*/
+ 
+.products-title {
+   height: 100px;
+   width: auto;
+   margin-top: -20px;
+   font-size: 33px;
+   background-color: white;
+   text-align: center;
+}
+ 
+.products-block {
+   display: flex;
+   height: 760px;
+   width: auto;
+   flex-direction: row;
+   flex-flow: row wrap;
+   justify-content: space-around;
+}
+ 
+.product.column {
+   display: flex;
+   flex-direction: column;
+   height: 400px;
+   width: auto;
+   transition-duration: 200ms;
+}
+ 
+.product-pic {
+   height: 300px;
+   width: 300px;
+   border-style: solid;
+   border-color:black;
+}
+ 
+.product-info {
+   display: flex;
+   height: 50px;
+   width: 300px;
+   background-color: rgb(255, 255, 255);
+   border-style: solid;
+   border-color: black;
+   align-items: center;
+   justify-content: space-around;
+}
+ 
+.product-info p {
+   font-size: 25px;
+}
+ 
+/* END OF PRODUCTS / BEGGINING OF ABOUT*/
+ 
+.about-container-parent {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: inherit;
+   height: 730px;
+   width: 100%;
+}
+ 
+.about-container-child {
+   display: flex;
+   background-color: lightgray;
+   height: 600px;
+   width: 80%;
+   justify-content: center;
+   border-radius: 50px;
+}
+ 
+.about-container-grandchild {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+ 
+.about-container-child p {
+   display: flex;
+   justify-content: center;
+   color: black;
+   height: 500px;
+   width: 60%;
+}
+ 
+/* END OF ABOUT / BEGGINING OF CONTACT*/
+ 
+.contact-row {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: auto;
+   height: 732px;
+   background-color: inherit;
+}
+ 
+.contact-block {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   width: 70%;
+   height: 90%;
+   background-color: rgb(211, 211, 211);
+   border-radius: 50px;
+}
+ 
+.contact-above {
+   display: flex;
+   justify-content: center;
+   justify-content: space-between;
+   align-items: flex-end;
+   background-color: inherit;
+   width: 90%;
+   height: 45%;
+}
+ 
+.contact-below {
+   display: flex;
+   background-color: inherit;
+   width: 90%;
+   height: 25%;
+   justify-content: center;
+}
+ 
+.contact-above input {
+   height: 100px;
+   width:400px;
+   font-size: 30px;
+}
+ 
+.contact-below input {
+   height: 100px;
+   width:600px;
+   font-size: 30px;
+}
+ 
+textarea:focus, input:focus{
+   outline: none;
+}
+ 
+.contact-button {
+   margin-bottom: 120px;
+   color: white;
+   background-color: black;
+   border-style: none;
+   font-size: 20px;
+   border-radius: 10px;
+}
+ 
+.contact-button:hover {
+   background-color: grey;
+}
+ 
+/* END OF CONTACT / BEGGINING OF DOCUMENTATION*/
+ 
+.doc-row {
+   display: flex;
+   width: 100%;
+   height: 732px;
+   background-color: lightgray;
+   justify-content: space-around;
+   align-items: center;
+}
+ 
+.doc-row p {
+   font-size: 20px;
+}
+ 
+.doc-html {
+   display: flex;
+   flex-direction: column;
+   height: 60%;
+   width: 30%;
+   background-color: white;
+   border-radius: 50px;
+   text-align: center;
+   word-wrap: break-word;
+}
+ 
+.doc-css {
+   display: flex;
+   flex-direction: column;
+   height: 60%;
+   width: 30%;
+   background-color: white;
+   border-radius: 50px;
+   text-align: center;
+   word-wrap: break-word;
+}
+ 
+.doc-js {
+   display: flex;
+   flex-direction: column;
+   height: 60%;
+   width: 30%;
+   background-color: white;
+   border-radius: 50px;
+   text-align: center;
+   word-wrap: break-word;
+}
+ 
+/* END OF DOCUMENTATION / BEGGINING OF FOOTER */
+ 
+footer {
+   display: flex;
+   justify-content: space-evenly;
+   height: 70px;
+   width: 100%;
+   border-top-color: black;
+   border-left-color: white;
+   border-right-color: white;
+   border-bottom-color: white;
+   border-style: solid;
+}
+ 
+.left-footer {
+   display: flex;
+   height: auto;
+   width: 32%;
+   align-items: center;
+}
+ 
+.right-footer {
+   display: flex;
+   height: auto;
+   flex-direction: column;
+   width: 32%;
+   align-items: center;
+}
+ 
+footer a {
+   margin: 5px;
+   text-decoration: underline;
+   color: black;
+   font-size: 17px;
+}
+/* #container{
+ position: relative;
+ width: 940px;
+}
+#contatiner::after{
+   content: "";
+   display: block;
+   clear: both;
+   height: 0;
+}
+#menu{
+   position: relative;
+   float: left;
+   width: 100%;
+   border-radius: 50px;
+   background: #1b3d53;
+   padding: 10px 30px;
+}
+#menu, #menu ul{
+   list-style: none;
+}
+#menu > li{
+   float: left;
+   position: relative;
+   border-right: 1px soild rgba(0,0,0,0.1);
+   box-shadow: 1px 0 0 rgba(0,0,0,0.1);
+   perspective: 1000px;
+}
+#menu > li:first-child{
+   box-shadow: -1px 00 rgba(0,0,0,0,1), 1px 0 0 rgba(255,255,255,0.25);
+}
+#menu a{
+   display: block;
+   position: relative;
+   z-index: 10;
+   padding: 13px 20px 13px 20px;
+   text-decoration: none;
+   color:white;
+   line-height: 1;
+   font-weight: 400;
+   font-size: 16px;
+   background:transparent ;
+   transition: all 0.25s ease-in-out;
+   letter-spacing: 2px;
 
-.container {
-  display:flex;
-  justify-content: center;
-  
 }
+#menu > li :hover > a{
+background: #1b3d53;
+color: rgba(0,0,223,252,1);
+text-shadow: none;
+}
+#menu li ul {
+   position: absolute;
+   left: 0;
+   z-index: 1;
+   width: 200px;
+   padding: 0;
+   opacity: 0;
+   visibility: hidden;
+   border-bottom-left-radius: 4px;
+   background: transparent;
+   overflow: hidden;
+   transform-origin: 50% 0%;
+}
+ #menu li:hover ul{
+   padding: 15px 0;
+   background: #ib3d53;
+   opacity: 1;
+   visibility: :focus-visible;
+   box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+animation: swingdown 1s timing-function delay iteration-count direction fill-mode;
+ @keyframes swingdown {
+ 0%{
+   opacity: 0.99999;
+   transform: rotateX(90deg);
+ }
+ 30%{
+   transform: ratateX(-20deg) rotateY(5deg);
+   animation-timing-function: ease-in-out;
 
-.item {
-display: flex ;
-  height: 100px;
-flex-direction:column-reverse;
-color:  #e8909c;
-font-size: larger;
-}
-
-.item + .item {
-  margin-left: 10%;
-
-  
-}
- .logo {
-  width: 300px;
-  height: 450px;
-} 
-.Arabica {
-  width: 150px;
-  height: auto;
-}
-markus e 1000 gubbe
+ /* } 
+ /* testade här göra en dropdown grej men tyvärr gick inte så bra som du kan se men det va värt ett försök */
